@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Debt-Free-Calc-React/static/css/main.2cf24b2b.chunk.css",
+    "main.js": "/Debt-Free-Calc-React/static/js/main.6cb72a90.chunk.js",
+    "main.js.map": "/Debt-Free-Calc-React/static/js/main.6cb72a90.chunk.js.map",
+    "runtime-main.js": "/Debt-Free-Calc-React/static/js/runtime-main.1d9bc782.js",
+    "runtime-main.js.map": "/Debt-Free-Calc-React/static/js/runtime-main.1d9bc782.js.map",
+    "static/js/2.3e0e4268.chunk.js": "/Debt-Free-Calc-React/static/js/2.3e0e4268.chunk.js",
+    "static/js/2.3e0e4268.chunk.js.map": "/Debt-Free-Calc-React/static/js/2.3e0e4268.chunk.js.map",
+    "static/js/3.f77e9481.chunk.js": "/Debt-Free-Calc-React/static/js/3.f77e9481.chunk.js",
+    "static/js/3.f77e9481.chunk.js.map": "/Debt-Free-Calc-React/static/js/3.f77e9481.chunk.js.map",
+    "index.html": "/Debt-Free-Calc-React/index.html",
+    "static/css/main.2cf24b2b.chunk.css.map": "/Debt-Free-Calc-React/static/css/main.2cf24b2b.chunk.css.map",
+    "static/js/2.3e0e4268.chunk.js.LICENSE.txt": "/Debt-Free-Calc-React/static/js/2.3e0e4268.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1d9bc782.js",
+    "static/js/2.3e0e4268.chunk.js",
+    "static/css/main.2cf24b2b.chunk.css",
+    "static/js/main.6cb72a90.chunk.js"
+  ]
+}
