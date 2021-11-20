@@ -1,39 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(58,60,180);
+    background: 
+    linear-gradient(90deg, 
+    rgba(58,60,180,1) 0%, 
+    rgba(29,193,253,1) 100%);
+    font-family: 'Montserrat', sans-serif;
+}
+
 .container {
     max-width: 1200px;
     width: 100%;
     padding-left: 15px;
     padding-right: 15px;
-    margin: 0.25rem auto;
-}
-
-.padding {
-    padding: 0.5rem;
+    margin: 0.5rem auto;
 }
 
 .header-container {
+    padding: 0.5rem;
+    margin: 1.5rem 0.5rem 0.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    border: 1px solid black;
     border-radius: 8px;
+    background-color: rgba(250, 249, 247, 0.8);
+
 }
 
-.header-container > * {
-    padding: 1rem;
+.header-container h1 {
+    margin: 0.25rem;
 }
 
 .calc-container {
+    padding: 0.5rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0.5rem;
-    border: 1px solid black;
     border-radius: 8px;
+    
 }
 
 .calc-container .card-container {
     border-radius: 8px;
-    border: 1px solid black;
+    background-color: rgba(250, 249, 247, 0.8);
+
 }
 
 /* Enter Amounts Card */
@@ -42,9 +54,11 @@
 }
 
 
-.calc-container .enter-amounts-container form .button {
+.calc-container .enter-amounts-container form .button,
+.calc-container .enter-amounts-container form button,
+.calc-container .make-payment-container form button {
     font-weight: 700;
-    min-width: 175px;
+    width: 250px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -52,14 +66,32 @@
     letter-spacing: 1.63px;
     padding: 0.5rem;
     border-radius: 50rem;
+    cursor: pointer;
+    background: rgb(58,60,180);
+    background: 
+    linear-gradient(90deg, 
+    rgba(58,60,180,1) 0%, 
+    rgba(29,193,253,1) 100%);
+    color: white;
+}
+
+.calc-container .enter-amounts-container form .button:hover,
+.calc-container .enter-amounts-container form button:hover,
+.calc-container .make-payment-container form button:hover {
+    box-shadow: 0 0 10px black;
 }
 
 .calc-container .enter-amounts-container h2,
+.calc-container .make-payment-container h2,
+.calc-container .payment-history-container h2,
 .calc-container .payment-breakdown-container h2 {
     text-align: center;
     font-size: 2rem;
+    margin: 1rem;
 }
-.calc-container .enter-amounts-container form {
+
+.calc-container .enter-amounts-container form,
+.calc-container .make-payment-container form {
     display: flex;
     flex-direction: column;
     padding: 1rem;
@@ -67,25 +99,31 @@
     align-items: center;
 }
 
-.calc-container .enter-amounts-container form > * {
+.calc-container .enter-amounts-container form > * ,
+.calc-container .make-payment-container form > * {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
 }
 
-.calc-container .enter-amounts-container form .type {
+.calc-container .enter-amounts-container form .type,
+    .calc-container .make-payment-container form .type {
     padding: 1rem;
     border: none;
     border-bottom: 1px solid black;
     outline: none;
     font-size: large;
+    background-color: transparent;
+
 }
 
-.calc-container .payment-breakdown-container .flex-container > * {
-    margin: 1rem auto
+.calc-container .payment-breakdown-container .flex-container > *,
+.calc-container .make-payment-container .flex-container > * {
+    margin: 0.5rem auto
 }
 
 
-.calc-container .payment-breakdown-container .flex-container {
+.calc-container .payment-breakdown-container .flex-container,
+.calc-container .make-payment-container .flex-container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -93,7 +131,7 @@
     align-items: center;
 }
 
-.calc-container .payment-history {
+.calc-container .payment-history-flex {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -101,13 +139,12 @@
     padding: 1rem;
 }
 
-.footer-container {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    border: 1px solid black;
-    border-radius: 8px;
+.calc-container .payment-history-flex ul {
+    list-style-type: none;
+}
 
+#principal-warning, #debt-free-message {
+    text-align: center;
 }
 
 @media screen and (max-width: 640px) {

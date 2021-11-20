@@ -30,7 +30,11 @@ class CalcContainer extends React.Component {
     }
 
     resetState = () => {
-        this.setState(original)
+        this.setState(original);
+        let debtFree = document.getElementById('debt-free-message');
+        if (debtFree) {
+            debtFree.remove();
+        }
       }
       
 

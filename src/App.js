@@ -1,6 +1,5 @@
 import Header from "./components/Header";
 import CalcContainer from "./components/CalcContainer";
-import Footer from "./components/Footer";
 import './ComponentCSS/component.css';
 
 function App() {
@@ -8,7 +7,6 @@ function App() {
     <div>
       <Header/>
       <CalcContainer/>
-      <Footer/>
     </div>
   );
 }
