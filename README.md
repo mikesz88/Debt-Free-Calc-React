@@ -1,4 +1,4 @@
-# [Project 8 - JavaScript Website with API](https://mikesz88.github.io/JS-Website-with-API/)
+# [Project 9 - Debt Free Calculator](https://mikesz88.github.io/JS-Website-with-API/)
 
 You are going to build a debt-free calculator in React. With a normal debt calculator, it will tell you how long a debt will take to be paid off. In this calculator, it will actually keep track of your payments and overpayments.
 
